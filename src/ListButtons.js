@@ -1,18 +1,20 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import PotencyFunction from './PotencyFunction.js';
+import FactorialFunction from './FactorialFunction.js';
+
 require('./styles/ListButtons.css');
+
 
 class ListButtons extends Component {
     render() {
         return (
-            <div>
-                <label>
-                    <PotencyFunction />
-                </label>
-            </div>
+            <li>
+                <PotencyFunction />
+                <FactorialFunction />
+            </li>
         );
     }
 }
-
 
 export default ListButtons;

@@ -47,7 +47,7 @@ function Potency(props) {
 
 function ExponentButton(props) {
 	return (
-		<button onClick={props.onClick} className="button button2">
+		<button onClick={props.onClick} className="potency-button">
 			Potencia de N
 		</button>
 	);
