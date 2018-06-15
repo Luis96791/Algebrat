@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import PotencyCalculator from './PotencyCalculator.js';
-require('./styles/PotencyFunction.css');
+require('../styles/PotencyFunction.css');
 
 class PotencyFunction extends Component {
 	constructor(props) {
@@ -17,8 +17,7 @@ class PotencyFunction extends Component {
 			this.setState({isAction: false});
 		} else {
 			this.setState({isAction: true});
-		}
-			
+		}	
 	}
 
 	render() {
@@ -48,7 +47,7 @@ function Potency(props) {
 function ExponentButton(props) {
 	return (
 		<button onClick={props.onClick} className="potency-button">
-			Potencia de N
+			Elevar a N
 		</button>
 	);
 }

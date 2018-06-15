@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import img from './assets/factorial.png';
+import img_factorial from '../assets/factorial.png';
 
-require('./styles/w3.css');
+
+require('../styles/w3.css');
+require('../styles/FactorialCalculator.css');
 
 function CalculateFactorial(number) {
     const _number = parseFloat(number);
 
     if(Number.isNaN(_number)) {
-        return '';
+        return '--';
     }
 
     var factorial = 1;
@@ -16,7 +18,7 @@ function CalculateFactorial(number) {
     for (var i = 1; i <= _number; i++) {
         factorial *= i;
     }
-    return factorial.toString();
+    return factorial;
 }
 
 function SolutionFactorial(number) {
@@ -82,7 +84,7 @@ class FactorialCalculator extends Component {
         const result = CalculateFactorial(number);
 
         return (
-            <form className="w3-container w3-card-4 w3-light-grey w3-text-green w3-margin">
+            <form className="w3-container w3-card-4 w3-light-grey w3-text-green w3-margin w3-margin-top w3-margin-left w3-margin-right w3-margin-button">
                 <div className="w3-container w3-green">
                     <h1 className="w3-center">Calcular Factorial</h1>
                 </div>
@@ -91,9 +93,9 @@ class FactorialCalculator extends Component {
                     <label>Numero</label>
                 </p>
                 <p>
-                    <img src={img} />
+                    <img src={img_factorial} alt="formula factorial" />
                     <br/>
-                    <label>Formula</label>
+                    <label>Fórmula</label>
                 </p>
                 <p>
                     <textarea className="w3-input" value={solution} onChange={this.handleSolutionChange} disabled ></textarea>
@@ -101,7 +103,7 @@ class FactorialCalculator extends Component {
                 </p>
                 <p>
                     <input className="w3-input" value={result} onChange={this.handleResultChange} disabled />
-                    <label>Resultado</label>
+                    <label>Resultado</label> 
                 </p>
             </form>
         );

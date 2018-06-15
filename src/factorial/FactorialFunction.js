@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import FactorialCalculator from './FactorialCalculator.js';
-require('./styles/FactorialFunction.css');
+require('../styles/FactorialFunction.css');
 
 class FactorialFunction extends Component {
     constructor(props) {
@@ -48,7 +48,7 @@ function Factorial(props) {
 
 function FactorialButton(props) {
     return (
-        <button onClick={props.onClick} className="factorial-button factorial-button2">
+        <button onClick={props.onClick} className="factorial-button">
             Factorial
         </button>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-require('./styles/w3.css');
+require('../styles/w3.css');
 
 function CalculatePotency(base, exponent) {
 	const _base = parseFloat(base);
@@ -72,7 +72,7 @@ class PotencyCalculator extends Component {
 		const result = CalculatePotency(base, exponent);
 
 		return (
-			<form className="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+			<form className="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin w3-margin-top w3-margin-left w3-margin-right w3-margin-button">
 				<div className="w3-container w3-blue">
 					<h1 className="w3-center">Elevar a Potencia de N</h1>
 				</div>

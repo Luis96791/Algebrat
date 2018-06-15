@@ -219,7 +219,8 @@ a {
     border:none;
     border-bottom:1px 
     solid #ccc;
-    width:30%}
+    width:40%
+}
 .w3-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
 .w3-dropdown-click,.w3-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
 .w3-dropdown-hover:hover .w3-dropdown-content{display:block}
@@ -325,19 +326,19 @@ a {
 .w3-leftbar{border-left:6px solid #ccc!important}.w3-rightbar{border-right:6px solid #ccc!important}
 .w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
 .w3-margin {
-    margin:100px!important
+    margin:80px!important
 }
 .w3-margin-top {
-    margin-top:100px!important
+    margin-top:40px!important
 }
 .w3-margin-bottom {
-    margin-bottom:100px!important
+    margin-bottom:200px!important
 }
 .w3-margin-left {
-    margin-left:100px!important
+    margin-left:380px!important
 }
 .w3-margin-right {
-    margin-right:100px!important
+    margin-right:40px!important
 }
 .w3-padding-small{padding:4px 8px!important}.w3-padding{padding:8px 16px!important}.w3-padding-large{padding:12px 24px!important}
 .w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}

@@ -1,4 +1,4 @@
-.factorial-button {
+.general-cuadratic-button {
     background-color: orange; /* Green */
     border-radius: 12px;
     color:white;
@@ -9,18 +9,18 @@
     text-align: center;
     text-decoration:none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     margin: 2px 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
     position: fixed;
-    top: 10px;
+    top: 70px;
     left: 180px;
 }
 
-.factorial-button:hover {
-    background-color: #4CAF50;
+.general-cuadratic-button:hover {
+    background-color: brown;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
