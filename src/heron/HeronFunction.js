@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom';
 
 require('../styles/HeronFunction.css');
 
+
 class HeronFunction extends Component {
     constructor(props) {
         super(props);
         this.handleHeronClick = this.handleHeronClick.bind(this);
-        this.handleHeronMouseOver = this.handleHeronMouseOver.bind(this);
+        
         this.state = {
             isAction: false
         };
@@ -22,10 +23,6 @@ class HeronFunction extends Component {
         }
     }
 
-    handleHeronMouseOver() {
-        console.log("Hola");
-    }
-
     render() {
         const isAction = this.state.isAction;
 
@@ -35,8 +32,7 @@ class HeronFunction extends Component {
                     <Heron isAction={isAction}/>
                 </label>
                 <HeronButton 
-                    onClick={this.handleHeronClick} 
-                    onMouseOver={this.handleHeronMouseOver}
+                    onClick={this.handleHeronClick}
                 />
             </div>
         );
