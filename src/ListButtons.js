@@ -4,12 +4,9 @@ import FactorialFunction from './factorial/FactorialFunction.js';
 import TCPFunction from './tcp/TCPFunction.js';
 import GeneralCuadraticFunction from './generalCuadratic/GeneralCuadraticFunction.js';
 import HeronFunction from './heron/HeronFunction.js';
-import DifferenceSquaresFunction from './differenceOfSquares/DifferenceSquaresFunction.js';
-import DiscriminantFactorFunction from './discriminant/DiscriminantFactorFunction.js';
-import ParabolaVertexFunction from './parabolaVertex/ParabolaVertexFunction.js';
-import EulerPoliedrosFunction from './eulerPoliedros/EulerPoliedrosFunction.js';
 
 require('./styles/ListButtons.css');
+
 
 class ListButtons extends Component {
     render() {
@@ -20,10 +17,6 @@ class ListButtons extends Component {
                 < TCPFunction />
                 < GeneralCuadraticFunction />
                 < HeronFunction />
-                < DifferenceSquaresFunction />
-                < DiscriminantFactorFunction />
-                < ParabolaVertexFunction />
-                < EulerPoliedrosFunction />
             </li>
         );
     }

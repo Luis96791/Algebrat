@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import HeronCalculator from './HeronCalculator';
+//import HeronCalculator from './HeronCalculator.js';
 
 require('../styles/HeronFunction.css');
-
 
 class HeronFunction extends Component {
     constructor(props) {
         super(props);
         this.handleHeronClick = this.handleHeronClick.bind(this);
-        
+        this.handleHeronMouseOver = this.handleHeronMouseOver.bind(this);
         this.state = {
             isAction: false
         };
@@ -23,6 +22,10 @@ class HeronFunction extends Component {
         }
     }
 
+    handleHeronMouseOver() {
+        console.log("Hola");
+    }
+
     render() {
         const isAction = this.state.isAction;
 
@@ -32,7 +35,8 @@ class HeronFunction extends Component {
                     <Heron isAction={isAction}/>
                 </label>
                 <HeronButton 
-                    onClick={this.handleHeronClick}
+                    onClick={this.handleHeronClick} 
+                    onMouseOver={this.handleHeronMouseOver}
                 />
             </div>
         );
@@ -44,7 +48,7 @@ function Heron(props) {
     if(isAction) {
         return (
             <div>
-                <HeronCalculator />
+               /** HeronCalculator */
             </div>
         );
     }
@@ -53,7 +57,7 @@ function Heron(props) {
 
 function HeronButton(props) {
     return (
-        <button onClick={props.onClick}  className="heron-button">
+        <button onClick={props.onClick} onMouseOver={props.onMouseOver} className="heron-button">
             Fórmula de Herón
         </button>
     );
