@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-//import HeronCalculator from './HeronCalculator.js';
+import HeronCalculator from './HeronCalculator.js';
 
 require('../styles/HeronFunction.css');
 
@@ -48,7 +48,7 @@ function Heron(props) {
     if(isAction) {
         return (
             <div>
-               /** HeronCalculator */
+               < HeronCalculator />
             </div>
         );
     }
