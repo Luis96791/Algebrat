@@ -1,26 +1,26 @@
-.factorial-button {
+.differenceSquares-button {
     background-color: orange; /* Green */
     border-radius: 12px;
     color:white;
-    border: 2px solid #008CBA;
-    padding: 8px 8px;
+    padding: 0px 8px;
     width: 160px;
     height: 50px;
     text-align: center;
     text-decoration:none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
+    border: 2px solid #008CBA;
     margin: 2px 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    position: absolute;
-    top: 10px;
+    position: absolute;    
+    top: 130px;
     left: 180px;
 }
 
-.factorial-button:hover {
-    background-color: #4CAF50;
+.differenceSquares-button:hover {
+    background-color: purple;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

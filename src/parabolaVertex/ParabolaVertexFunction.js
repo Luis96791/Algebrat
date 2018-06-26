@@ -1,21 +1,20 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import HeronCalculator from './HeronCalculator';
+import ParabolaVertexCalculator from './ParabolaVertexCalculator';
 
-require('../styles/HeronFunction.css');
+require('../styles/ParabolaVertexFunction.css');
 
-
-class HeronFunction extends Component {
+class ParabolaVertexFunction extends Component {
     constructor(props) {
         super(props);
-        this.handleHeronClick = this.handleHeronClick.bind(this);
-        
+        this.handleParabolaVertexClick = this.handleParabolaVertexClick.bind(this);
+
         this.state = {
             isAction: false
         };
     }
 
-    handleHeronClick() {
+    handleParabolaVertexClick() {
         if(this.state.isAction) {
             this.setState({isAction: false});
         } else {
@@ -29,39 +28,39 @@ class HeronFunction extends Component {
         return (
             <div>
                 <label>
-                    <Heron isAction={isAction}/>
+                    <ParabolaVertex isAction={isAction}/>
                 </label>
-                <HeronButton 
-                    onClick={this.handleHeronClick}
+                <ParabolaVertexButton 
+                    onClick={this.handleParabolaVertexClick}
                 />
             </div>
-        );
+        ); 
     }
 }
 
-function Heron(props) {
+function ParabolaVertex(props) {
     const isAction = props.isAction;
     if(isAction) {
-        return (
+        return(
             <div>
-                <HeronCalculator />
+                <ParabolaVertexCalculator />
             </div>
         );
     }
     return null;
 }
 
-function HeronButton(props) {
+function ParabolaVertexButton(props) {
     return (
-        <button onClick={props.onClick}  className="heron-button">
-            Fórmula de Herón
+        <button onClick={props.onClick} className="parabolaVertex-button">
+            Vértice de Parábola
         </button>
     );
 }
 
 ReactDOM.render(
-    <HeronFunction />,
+    <ParabolaVertexFunction />,
     document.getElementById('root')
 );
 
-export default HeronFunction;
+export default ParabolaVertexFunction;
