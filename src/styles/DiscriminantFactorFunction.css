@@ -14,7 +14,7 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    position: fixed;    
+    position: absolute;    
     top: 190px;
     left: 10px;
 }

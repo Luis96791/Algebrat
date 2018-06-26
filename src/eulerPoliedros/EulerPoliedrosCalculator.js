@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom';
 
 require('../styles/w3.css');
 
-function GetVariableId(value) {
-    if(value == 0) {
-        return 0;
-    }
-}
 
 class EulerPoliedrosCalculator extends Component {
     constructor(props) {
