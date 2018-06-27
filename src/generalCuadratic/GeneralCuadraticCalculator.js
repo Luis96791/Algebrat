@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'; 
 import img_cuadratica from '../assets/formula_cuadratica.png';
 
 require('../styles/w3.css');
